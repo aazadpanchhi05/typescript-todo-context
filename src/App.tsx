@@ -1,11 +1,17 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import { Container } from "react-bootstrap";
+import { AddTodo } from "./components/AddTodo";
+import { Todos } from "./containers/Todos";
+import TodoProvider from "./context/TodoContext";
 
 function App() {
   return (
-    <div>
-      <h1>Hello</h1>
-    </div>
+    <TodoProvider>
+      <Container>
+        <AddTodo />
+        <Todos />
+      </Container>
+    </TodoProvider>
   );
 }
 
