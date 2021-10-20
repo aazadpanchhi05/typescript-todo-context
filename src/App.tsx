@@ -7,6 +7,12 @@ import TodoProvider from "./context/TodoContext";
 function App() {
   return (
     <TodoProvider>
+      <div>
+        <p></p>
+        <h2 style={{color: "Blue",display: "flex", justifyContent: "center", alignItems: "center"}}>
+          <p>ToDo List</p>
+        </h2>
+      </div>
       <Container>
         <AddTodo />
         <Todos />
